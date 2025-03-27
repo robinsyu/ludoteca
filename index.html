@@ -3,132 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Play Ludoteca online - An exciting multiplayer board game where strategy meets fun. Experience the classic game reimagined for the digital age.">
-    <title>Ludoteca - Play the Classic Board Game Online | ludoteca.fun</title>
-    <link rel="canonical" href="https://ludoteca.fun" />
+    <title>Ludoteca - Play Fun Games Online!</title>
+    <meta name="description" content="Ludoteca offers a collection of fun and engaging online games. Play now for free in your browser!">
+    <link rel="canonical" href="https://ludoteca.fun">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2DGHBQCYDN"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Gloria+Hallelujah&family=Patrick+Hand&display=swap" rel="stylesheet">
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-2DGHBQCYDN');
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sketchy': ['"Gloria Hallelujah"', 'cursive'],
+                        'hand': ['"Patrick Hand"', 'cursive'],
+                        'alt': ['"Architects Daughter"', 'cursive'],
+                    },
+                    colors: {
+                        'paper': '#f8f5e6',
+                        'pencil': '#2d2d2d',
+                        'accent': '#ff6b6b',
+                        'highlight': '#ffd166',
+                    }
+                },
+            },
+        }
     </script>
     <style>
-        :root {
-            --apple-blue: #007AFF;
-            --apple-gray: #8E8E93;
-            --apple-green: #34C759;
+        body {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23dddcdc' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+            background-color: var(--color-paper, #f8f5e6);
         }
-        .game-container {
-            aspect-ratio: 16/9;
-            width: 100%;
-            max-width: 960px;
+        .sketchy-border {
+            border: 3px solid var(--color-pencil, #2d2d2d);
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+            box-shadow: 6px 6px 0 rgba(0,0,0,0.1);
             position: relative;
         }
-        .game-frame {
+        .sketchy-border::before {
+            content: '';
+            border: 2px solid var(--color-pencil, #2d2d2d);
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-            margin: 0;
-            padding: 0;
-            user-select: none;
+            top: 4px;
+            left: 4px;
+            right: 4px;
+            bottom: 4px;
+            pointer-events: none;
+            opacity: 0.2;
         }
+        .sketchy-button {
+            border: 2px solid var(--color-pencil, #2d2d2d);
+            border-radius: 255px 8px 225px 8px/8px 225px 8px 255px;
+            transition: all 0.3s ease;
+        }
+        .sketchy-button:hover {
+            box-shadow: 4px 4px 0 rgba(0,0,0,0.4);
+            transform: translate(-2px, -2px);
+        }
+        /* Required HTTP headers for Godot games */
+        /* Add these to your server configuration:
+           Cross-Origin-Embedder-Policy: require-corp
+           Cross-Origin-Opener-Policy: same-origin
+        */
     </style>
+    <!-- Add HTTP header warnings -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const iframe = document.querySelector('iframe');
+            if (iframe) {
+                iframe.onload = function() {
+                    try {
+                        // This will throw an error if cross-origin headers aren't set correctly
+                        const testAccess = iframe.contentWindow.location.href;
+                    } catch (e) {
+                        console.warn('Cross-origin iframe access restricted. This is normal, but some games may require special HTTP headers.');
+                    }
+                };
+            }
+        });
+    </script>
 </head>
-<body class="bg-gray-50 text-gray-900">
-    <header class="bg-white shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-            <h1 class="text-4xl font-bold text-[#007AFF] mb-2">Ludoteca Online</h1>
-            <p class="text-xl text-[#8E8E93]">Experience the joy of classic board gaming in the digital age</p>
+<body class="font-hand text-pencil">
+    <header class="max-w-6xl mx-auto px-4 py-6 md:py-8">
+        <div class="sketchy-border bg-white p-4 md:p-6 mb-6">
+            <h1 class="text-4xl md:text-6xl font-sketchy text-center tracking-wide text-accent">Ludoteca</h1>
+            <p class="text-xl md:text-2xl text-center mt-2 italic">Your digital playground for fun and games!</p>
         </div>
     </header>
 
-
-
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <section class="mb-12">
-            <div class="game-container mx-auto shadow-lg rounded-lg overflow-hidden">
-                <iframe 
-                    id="game-iframe"
-                    src="https://html-classic.itch.zone/html/12608852/itchio/index.html"
-                    class="game-frame"
-                    title="Ludoteca Game"
-                    scrolling="no"
-                    allow="autoplay; payment; fullscreen; microphone; focus-without-user-activation *; screen-wake-lock; gamepad; clipboard-read; clipboard-write; accelerometer; gyroscope;"
-                    allowfullscreen
-                    sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-presentation allow-scripts allow-same-origin allow-downloads allow-popups allow-popups-to-escape-sandbox"
-                    loading="eager"
-                    importance="high"
-                    data-hj-allow-iframe="true">
-                </iframe>
-
-            </div>
-        </section>
-
-
-        
-        <section class="grid md:grid-cols-2 gap-8 mb-12">
-            <div>
-                <h2 class="text-2xl font-semibold text-[#007AFF] mb-4">Game Overview</h2>
-                <p class="text-gray-700 leading-relaxed">
-                    Ludoteca is a strategic puzzle game that challenges you to place blocks while following unique and evolving rules. Some levels require connecting same-colored blocks, while others forbid them from touching. With each puzzle, you must think ahead and adapt to new constraints, putting your logic and creativity to the test in a dynamic and engaging experience.
-                </p>
-            </div>
-            <div>
-                <h2 class="text-2xl font-semibold text-[#007AFF] mb-4">How to Play</h2>
-                <div class="text-gray-700 leading-relaxed space-y-4">
-                    <p class="font-medium">Controls:</p>
-                    <ul class="list-disc pl-5 space-y-2">
-                        <li>Drag and drop blocks on the game board</li>
-                        <li>Use right mouse button to rotate blocks</li>
-                        <li>Pro tip: You can rotate while dragging!</li>
-                    </ul>
-                    <p class="mt-4">
-                        Each level presents new challenges and rules. Pay attention to the color connections and block placement restrictions. Strategic thinking and careful planning are key to success!
-                    </p>
+    <main class="max-w-6xl mx-auto px-4 mb-12">
+        <section class="mb-10">
+            <div class="sketchy-border bg-white p-4 md:p-6 mb-6">
+                <div class="aspect-w-16 aspect-h-9 w-full">
+                    <iframe src="https://html-classic.itch.zone/html/12608852/itchio/index.html" 
+                            class="w-full h-[600px] border-0"
+                            allow="autoplay; fullscreen; cross-origin-isolated"
+                            allowfullscreen></iframe>
+                </div>
+                <div class="mt-4 text-center">
+                    <a href="https://html-classic.itch.zone/html/12608852/itchio/index.html" target="_blank" 
+                       class="sketchy-button inline-block bg-highlight px-6 py-3 text-xl font-bold">
+                        Play Fullscreen
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section class="bg-white rounded-lg shadow-sm p-6 mb-12">
-            <h2 class="text-2xl font-semibold text-[#007AFF] mb-4">Game Features</h2>
-            <ul class="grid md:grid-cols-2 gap-4 text-gray-700">
-                <li class="flex items-center">
-                    <svg class="w-5 h-5 text-[#34C759] mr-2" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                    </svg>
-                    Progressive Difficulty
-                </li>
-                <li class="flex items-center">
-                    <svg class="w-5 h-5 text-[#34C759] mr-2" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                    </svg>
-                    Intuitive Controls
-                </li>
-                <li class="flex items-center">
-                    <svg class="w-5 h-5 text-[#34C759] mr-2" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                    </svg>
-                    Dynamic Puzzles
-                </li>
-                <li class="flex items-center">
-                    <svg class="w-5 h-5 text-[#34C759] mr-2" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                    </svg>
-                    Creative Problem Solving
-                </li>
-            </ul>
+        <section class="grid md:grid-cols-2 gap-8 mb-10">
+            <div class="sketchy-border bg-white p-4 md:p-6">
+                <h2 class="text-3xl font-sketchy mb-4 text-accent">About Ludoteca</h2>
+                <p class="mb-3">Ludoteca is your digital playground featuring an exciting collection of browser-based games that you can play instantly without any downloads.</p>
+                <p class="mb-3">Our games are carefully selected to provide a fun and engaging experience for players of all ages and preferences.</p>
+                <p>Whether you have a few minutes to spare or looking for hours of entertainment, Ludoteca has something for everyone!</p>
+            </div>
+            
+            <div class="sketchy-border bg-white p-4 md:p-6">
+                <h2 class="text-3xl font-sketchy mb-4 text-accent">How To Play</h2>
+                <ul class="list-disc list-inside space-y-2">
+                    <li>No downloads required - play directly in your browser</li>
+                    <li>Controls are simple and intuitive</li>
+                    <li>Works on both desktop and mobile devices</li>
+                    <li>New games added regularly</li>
+                    <li>Bookmark this page to come back for more fun!</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-10">
+            <div class="sketchy-border bg-white p-4 md:p-6">
+                <h2 class="text-3xl font-sketchy mb-4 text-accent">Game Features</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div>
+                        <h3 class="text-2xl font-alt font-bold mb-2">Easy to Play</h3>
+                        <p>Simple controls and intuitive gameplay make our games accessible to everyone, regardless of gaming experience.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-alt font-bold mb-2">Fun for All Ages</h3>
+                        <p>Our collection includes games suitable for kids, teens, and adults - there's something for everyone at Ludoteca.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-alt font-bold mb-2">Mobile Friendly</h3>
+                        <p>Play on the go! Our games are optimized for both desktop and mobile devices, so you can have fun anywhere.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="sketchy-border bg-white p-4 md:p-6">
+                <h2 class="text-3xl font-sketchy mb-4 text-accent">Why Choose Ludoteca</h2>
+                <p class="mb-3">At Ludoteca, we believe that games should be easily accessible and fun for everyone. That's why we've created this platform to bring you the best browser-based games without any barriers.</p>
+                <p class="mb-3">Our collection is constantly growing, so make sure to check back regularly for new additions to our digital playground.</p>
+                <p>We value your feedback and are always looking to improve your gaming experience. Enjoy your time at Ludoteca!</p>
+            </div>
         </section>
     </main>
 
-    <footer class="bg-white border-t">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-            <p class="text-center text-gray-600">&copy; 2025 Ludoteca.fun - All rights reserved</p>
-        </div>
+    <footer class="max-w-6xl mx-auto px-4 py-6 text-center">
+        <p class="mb-2">&copy; 2025 Ludoteca.fun. All rights reserved.</p>
+        <p class="text-sm text-gray-600">Your favorite destination for online browser games!</p>
     </footer>
+
+    <!-- Add this for responsive iframe resizing -->
+    <script>
+        if (!document.getElementById('aspect-ratio-css')) {
+            const style = document.createElement('style');
+            style.id = 'aspect-ratio-css';
+            style.innerHTML = `
+                .aspect-w-16 {
+                    position: relative;
+                    padding-bottom: 56.25%;
+                }
+                .aspect-w-16 iframe {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                }
+            `;
+            document.head.appendChild(style);
+        }
+    </script>
 </body>
 </html> 
