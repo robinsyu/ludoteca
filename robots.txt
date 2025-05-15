@@ -1,0 +1,33 @@
+# Ludoteca robots.txt
+User-agent: *
+Allow: /
+
+# Allow all web crawlers to access all content
+User-agent: *
+Disallow:
+
+# Sitemap location
+Sitemap: https://ludoteca.fun/sitemap.xml
+
+# Prevent crawlers from accessing certain files
+User-agent: *
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /*.json$
+Disallow: /*.svg$
+
+# Allow Googlebot full access
+User-agent: Googlebot
+Allow: /
+
+# Allow Bingbot full access
+User-agent: Bingbot
+Allow: /
+
+# Allow Yandex full access
+User-agent: Yandex
+Allow: /
+
+# Allow Baidu full access
+User-agent: Baiduspider
+Allow: / 

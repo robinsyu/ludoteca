@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- English version - Main -->
+  <url>
+    <loc>https://ludoteca.fun/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludoteca.fun/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://ludoteca.fun/zh-cn/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ludoteca.fun/ko/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://ludoteca.fun/vi/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://ludoteca.fun/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ludoteca.fun/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludoteca.fun/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludoteca.fun/de/"/>
+  </url>
+  
+  <!-- Chinese version -->
+  <url>
+    <loc>https://ludoteca.fun/zh-cn/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludoteca.fun/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://ludoteca.fun/zh-cn/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ludoteca.fun/ko/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://ludoteca.fun/vi/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://ludoteca.fun/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ludoteca.fun/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludoteca.fun/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludoteca.fun/de/"/>
+  </url>
+  
+  <!-- Korean version -->
+  <url>
+    <loc>https://ludoteca.fun/ko/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludoteca.fun/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://ludoteca.fun/zh-cn/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ludoteca.fun/ko/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://ludoteca.fun/vi/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://ludoteca.fun/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ludoteca.fun/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludoteca.fun/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludoteca.fun/de/"/>
+  </url>
+  
+  <!-- Vietnamese version -->
+  <url>
+    <loc>https://ludoteca.fun/vi/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludoteca.fun/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://ludoteca.fun/zh-cn/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ludoteca.fun/ko/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://ludoteca.fun/vi/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://ludoteca.fun/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ludoteca.fun/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludoteca.fun/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludoteca.fun/de/"/>
+  </url>
+  
+  <!-- Brazilian Portuguese version -->
+  <url>
+    <loc>https://ludoteca.fun/pt-br/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludoteca.fun/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://ludoteca.fun/zh-cn/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ludoteca.fun/ko/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://ludoteca.fun/vi/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://ludoteca.fun/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ludoteca.fun/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludoteca.fun/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludoteca.fun/de/"/>
+  </url>
+  
+  <!-- Portuguese version -->
+  <url>
+    <loc>https://ludoteca.fun/pt/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludoteca.fun/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://ludoteca.fun/zh-cn/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ludoteca.fun/ko/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://ludoteca.fun/vi/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://ludoteca.fun/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ludoteca.fun/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludoteca.fun/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludoteca.fun/de/"/>
+  </url>
+  
+  <!-- Spanish version -->
+  <url>
+    <loc>https://ludoteca.fun/es/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludoteca.fun/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://ludoteca.fun/zh-cn/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ludoteca.fun/ko/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://ludoteca.fun/vi/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://ludoteca.fun/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ludoteca.fun/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludoteca.fun/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludoteca.fun/de/"/>
+  </url>
+  
+  <!-- German version -->
+  <url>
+    <loc>https://ludoteca.fun/de/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludoteca.fun/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://ludoteca.fun/zh-cn/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ludoteca.fun/ko/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://ludoteca.fun/vi/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://ludoteca.fun/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ludoteca.fun/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludoteca.fun/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludoteca.fun/de/"/>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://ludoteca.fun/privacy-policy.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <!-- Terms of Service -->
+  <url>
+    <loc>https://ludoteca.fun/terms-of-service.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset> 
