@@ -38,8 +38,8 @@
                     colors: {
                         'paper': '#f8f5e6',
                         'pencil': '#2d2d2d',
-                        'accent': '#ff6b6b',
-                        'highlight': '#ffd166',
+                        'accent': '#e64646',
+                        'highlight': '#ffc107',
                     }
                 },
             },
@@ -104,6 +104,17 @@
             box-shadow: 4px 4px 0 rgba(0,0,0,0.4);
             transform: translate(-2px, -2px);
         }
+        /* Improved link styles for better contrast */
+        .text-accent {
+            color: var(--color-accent, #e64646);
+            font-weight: 600;
+        }
+        /* Enhanced button styles for better visibility */
+        .bg-highlight {
+            background-color: var(--color-highlight, #ffc107);
+            color: #000000;
+            font-weight: bold;
+        }
         /* Required HTTP headers for Godot games */
         /* Add these to your server configuration:
            Cross-Origin-Embedder-Policy: require-corp
@@ -152,7 +163,8 @@
                     <iframe src="https://html-classic.itch.zone/html/12608852/itchio/index.html" 
                             class="w-full h-[600px] border-0"
                             allow="autoplay; fullscreen; cross-origin-isolated"
-                            allowfullscreen></iframe>
+                            allowfullscreen
+                            title="Featured Ludoteca Game"></iframe>
                 </div>
                 <div class="mt-4 text-center">
                     <a href="https://html-classic.itch.zone/html/12608852/itchio/index.html" target="_blank" 
@@ -293,7 +305,7 @@
             <a href="privacy-policy.html" class="text-accent hover:underline mr-4">Privacy Policy</a>
             <a href="terms-of-service.html" class="text-accent hover:underline">Terms of Service</a>
         </div>
-        <p class="text-sm text-gray-600">Ludoteca - The Ultimate Destination for Free Browser Games!</p>
+        <p class="text-sm font-medium text-gray-800">Ludoteca - The Ultimate Destination for Free Browser Games!</p>
     </footer>
 
     <!-- Add this for responsive iframe resizing -->
