@@ -2,9 +2,9 @@
 User-agent: *
 Allow: /
 
-# Allow all web crawlers to access all content
-User-agent: *
-Disallow:
+# 只禁止真正不需要索引的文件
+Disallow: /sw.js
+Disallow: /*.json$
 
 # Sitemap location
 Sitemap: https://ludoteca.fun/sitemap.xml
@@ -13,7 +13,6 @@ Sitemap: https://ludoteca.fun/sitemap.xml
 User-agent: *
 Disallow: /*.js$
 Disallow: /*.css$
-Disallow: /*.json$
 Disallow: /*.svg$
 
 # Allow Googlebot full access
